@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="./popupsMsg.css">
+
+    <script src="./popupsMsg.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <button>click here</button>
+
+
+    <p>in parctice you just create the personalisation object once and you use it when ever you do! wait for a new version where we will wrap everything within a class:</p>
+    <pre>
+        perso1 = {
+            popUp_styleClass:["popupsMsg_default_simplePop"],
+            //centred: true,
+            blackBackground: true,
+            animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+           // position: {top: "0", left: "0"}
+        }
+
+        popUp_msg("<h1>my message and can be html</h1>", perso1);
+    </pre>
+</body>
+</html>
+
+<script>
+  var button =  document.getElementsByTagName("button")[0];
+  var counter = 0;
+  button.onclick = function () {
+      if(counter === 0){
+          counter++;
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  //centred: true,
+                  blackBackground: true,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                 // position: {top: "0", left: "0"}
+              }
+          );
+      }
+      else if(counter === 1){
+          counter++;
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  centred: true,
+                  blackBackground: true,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                  //position: {top: "0", left: "0"}
+              }
+          );
+      }
+      else if(counter === 2){
+          counter++;
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  /// centred: true,
+                  blackBackground: true,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                  position: {top: "0", left: "0"}
+              }
+          );
+      }
+      else if(counter === 3){
+          counter++;
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  /// centred: true,
+                  blackBackground: true,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                  position: {top: "0", right: "0"}
+              }
+          );
+      }
+      else if(counter === 4){
+          counter++;
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  /// centred: true,
+                  blackBackground: true,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                  position: {bottom: "0", left: "0"}
+              }
+          );
+      }
+      else if(counter === 5){
+          counter++;
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  /// centred: true,
+                  blackBackground: true,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                  position: {bottom: "0", right: "0"}
+              }
+          );
+      }
+      else if(counter === 6){
+          counter++;
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  /// centred: true,
+                  blackBackground: false,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                  position: {top: "0", right: "0"}
+              }
+          );
+      }
+      else{
+          popUp_msg(
+              " hi there",
+              {
+                  popUp_styleClass:["popupsMsg_default_simplePop"],
+                  /// centred: true,
+                  blackBackground: false,
+                  animationClass: {show: "popupMsg_show_scaleUp", hide: "popupMsg_hide_scaleDown"},
+                  position: {bottom: "0", right: "0"}
+              }
+          );
+      }
+  };
+</script>

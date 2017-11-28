@@ -1,0 +1,1 @@
+about ! we will update that later! now that you can give a try for the project, also you can used even in production! But i count to build a class wrapper and also rewrite the whole thing in pure js
